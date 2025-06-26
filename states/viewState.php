@@ -2,15 +2,19 @@
 <?php
 require("statesData.php");
 $key = $_GET['stateId'];
+// $display = 0;
 
-foreach ($state_list as $id) {
-    if ($id["id"] == $key) {
-        $display = $id;
-    } else {
-        // header("location:error.php");
+foreach ($state_list as $id => $state) {;
+    if ($state["id"] == $key) {
+        $display = $state;
+        // print_r($display);
     }
+};
+
+if (!$display) {
+header("location:error.php");
 }
-// echo $display["capital"];
+
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +23,7 @@ foreach ($state_list as $id) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=., initial-scale=1.0">
-    <title>Welcome To <?php echo $display["state"];?></title>
+    <title>Welcome To <?php echo $display["state"]; ?></title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
 </head>
 
@@ -41,7 +45,7 @@ foreach ($state_list as $id) {
                         </tr>
                         <tr>
                             <th scope="col">Our Resources</th>
-                            <td scope="col"><?php print_r(count($display["minerals"]));?></td>
+                            <td scope="col"><?php print_r(count($display["minerals"])); ?></td>
                         </tr>
                         <tr>
                             <th scope="col">Our Governor</th>
@@ -62,17 +66,20 @@ foreach ($state_list as $id) {
                     <label for="input1">Search for a mineral</label>
                 </div>
                 <ul id="resourceList">
-    
+
                 </ul>
             </div>
         </div>
     </div>
 
+
+
     <script>
-        const resourceData = <?php echo json_encode($display["minerals"])?>;
+        const resourceData = <?php echo json_encode($display["minerals"]) ?>;
         const resourceList = document.querySelector("#resourceList");
 
         showResources(resourceData);
+
         function showResources(resourceData) {
             resourceList.innerHTML = "";
 
@@ -91,8 +98,6 @@ foreach ($state_list as $id) {
             showResources(result);
             // console.log(result);
         }
-        
-
     </script>
 </body>
 

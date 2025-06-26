@@ -73,7 +73,7 @@ require("statesData.php");
             state_data.innerHTML = "";
             let i = 1;
 
-            state_list.forEach(state => {
+            state_list.forEach(state => { 
                 state_data.innerHTML += `
                         <a href =""> <tr> 
                             <th scope="row">${i++}</th>
@@ -88,7 +88,7 @@ require("statesData.php");
         function searchStates(e) {
             const userInput = e.value.toLowerCase();
             const result = state_list.filter(function(state) {
-                const resultOutput = `${state.minerals}, ${state.state}, ${state.governor}, ${state.capital},${state.population}`;
+                const resultOutput = ` ${state.state},${state.capital}`;
                 const converted = resultOutput.toLowerCase();
                 return converted.includes(userInput);
             });

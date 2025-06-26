@@ -1,14 +1,7 @@
 <?php
 
 $state_list = [
-    [
-        "id" => 6,
-        "state" => "Bayelsa",
-        "capital" => "Yenagoa",
-        "population" => "2.39 Million",
-        "minerals" => ["Oil", "Gas"],
-        "governor" => "Douye Diri"
-    ],
+    
     [
         "id" => 18,
         "state" => "Kaduna",
@@ -16,6 +9,14 @@ $state_list = [
         "population" => "8.32 Million",
         "minerals" => ["Lead/zinc", "Gold", "Kaolin"],
         "governor" => "Uba Sani"
+    ],
+    [
+        "id" => 6,
+        "state" => "Bayelsa",
+        "capital" => "Yenagoa",
+        "population" => "2.39 Million",
+        "minerals" => ["Oil", "Gas"],
+        "governor" => "Douye Diri"
     ],
     [
         "id" => 1,
