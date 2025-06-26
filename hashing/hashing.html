@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hashing</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8 offset-md-2">
+                <h1 class="text-center">Welcome To The Hasher</h1>
+                <form action="hashing.php" method="post">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Enter Values You Want To Hash</label>
+                    <input name="text" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <select name="select" class="form-select" aria-label="Default select example">
+                      <option selected>Choose A Hashing Algorithm</option>
+                      <option value="1">MD5 Algorithm</option>
+                      <option value="2">SHA1 Algorithm</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
