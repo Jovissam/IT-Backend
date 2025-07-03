@@ -1,8 +1,8 @@
 <?php
-$all = [];
+$all = []; // creating an empty array
 
-for ($i = 1; $i <= 10; $i++) { 
-    $all[] = $i;
+for ($i = 1; $i <= 100; $i++) {     // creating a loop to generate numbers from 1 to hundred
+    $all[] = $i;     // storing the generated numbers indside the empty array
     // print_r($all);
 }
 ?>
@@ -29,10 +29,10 @@ for ($i = 1; $i <= 10; $i++) {
                   </thead>
                   <tbody>
                     <?php
-                    for ($i=0; $i < count($all); $i++) { 
+                    for ($i=0; $i < count($all); $i++) {      // looping through all thwe items in the array and displaying them on the browser
                         echo "<tr>";
                       echo "<th scope='row'>". $all[$i] ."</th>";
-                      if ($all[$i] % 2 == 0) {
+                      if ($all[$i] % 2 == 0) {    // if  statement for even numbers
                         echo "<td class ='text-success'>". $all[$i] ."</td>";
                         echo "<td></td>";
                       } else {

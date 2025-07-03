@@ -1,0 +1,239 @@
+        php math functions
+
+Function	Description
+
+abs()	Returns the absolute (positive) value of a number
+acos()	Returns the arc cosine of a number
+acosh()	Returns the inverse hyperbolic cosine of a number
+asin()	Returns the arc sine of a number
+asinh()	Returns the inverse hyperbolic sine of a number
+atan()	Returns the arc tangent of a number in radians
+atan2()	Returns the arc tangent of two variables x and y
+atanh()	Returns the inverse hyperbolic tangent of a number
+base_convert()	Converts a number from one number base to another
+bindec()	Converts a binary number to a decimal number
+ceil()	Rounds a number up to the nearest integer
+cos()	Returns the cosine of a number
+cosh()	Returns the hyperbolic cosine of a number
+decbin()	Converts a decimal number to a binary number
+dechex()	Converts a decimal number to a hexadecimal number
+decoct()	Converts a decimal number to an octal number
+deg2rad()	Converts a degree value to a radian value
+exp()	Calculates the exponent of e
+expm1()	Returns exp(x) - 1
+floor()	Rounds a number down to the nearest integer
+fmod()	Returns the remainder of x/y
+getrandmax()	Returns the largest possible value returned by rand()
+hexdec()	Converts a hexadecimal number to a decimal number
+hypot()	Calculates the hypotenuse of a right-angle triangle
+intdiv()	Performs integer division
+is_finite()	Checks whether a value is finite or not
+is_infinite()	Checks whether a value is infinite or not
+is_nan()	Checks whether a value is 'not-a-number'
+lcg_value()	Returns a pseudo random number in a range between 0 and 1
+log()	Returns the natural logarithm of a number
+log10()	Returns the base-10 logarithm of a number
+log1p()	Returns log(1+number)
+max()	Returns the highest value in an array, or the highest value of several specified values
+min()	Returns the lowest value in an array, or the lowest value of several specified values
+mt_getrandmax()	Returns the largest possible value returned by mt_rand()
+mt_rand()	Generates a random integer using Mersenne Twister algorithm
+mt_srand()	Seeds the Mersenne Twister random number generator
+octdec()	Converts an octal number to a decimal number
+pi()	Returns the value of PI
+pow()	Returns x raised to the power of y
+rad2deg()	Converts a radian value to a degree value
+rand()	Generates a random integer
+round()	Rounds a floating-point number
+sin()	Returns the sine of a number
+sinh()	Returns the hyperbolic sine of a number
+sqrt()	Returns the square root of a number
+srand()	Seeds the random number generator
+tan()	Returns the tangent of a number
+tanh()	Returns the hyperbolic tangent of a number
+
+                php string functions
+
+Function	Description
+addcslashes()	Returns a string with backslashes in front of the specified characters
+addslashes()	Returns a string with backslashes in front of predefined characters
+bin2hex()	Converts a string of ASCII characters to hexadecimal values
+chop()	Removes whitespace or other characters from the right end of a string
+chr()	Returns a character from a specified ASCII value
+chunk_split()	Splits a string into a series of smaller parts
+convert_cyr_string()	Converts a string from one Cyrillic character-set to another
+convert_uudecode()	Decodes a uuencoded string
+convert_uuencode()	Encodes a string using the uuencode algorithm
+count_chars()	Returns information about characters used in a string
+crc32()	Calculates a 32-bit CRC for a string
+crypt()	One-way string hashing
+echo()	Outputs one or more strings
+explode()	Breaks a string into an array
+fprintf()	Writes a formatted string to a specified output stream
+get_html_translation_table()	Returns the translation table used by htmlspecialchars() and htmlentities()
+hebrev()	Converts Hebrew text to visual text
+hebrevc()	Converts Hebrew text to visual text and new lines (\n) into <br>
+hex2bin()	Converts a string of hexadecimal values to ASCII characters
+html_entity_decode()	Converts HTML entities to characters
+htmlentities()	Converts characters to HTML entities
+htmlspecialchars_decode()	Converts some predefined HTML entities to characters
+htmlspecialchars()	Converts some predefined characters to HTML entities
+implode()	Returns a string from the elements of an array
+join()	Alias of implode()
+lcfirst()	Converts the first character of a string to lowercase
+levenshtein()	Returns the Levenshtein distance between two strings
+localeconv()	Returns locale numeric and monetary formatting information
+ltrim()	Removes whitespace or other characters from the left side of a string
+md5()	Calculates the MD5 hash of a string
+md5_file()	Calculates the MD5 hash of a file
+metaphone()	Calculates the metaphone key of a string
+money_format()	Returns a string formatted as a currency string
+nl_langinfo()	Returns specific local information
+nl2br()	Inserts HTML line breaks in front of each newline in a string
+number_format()	Formats a number with grouped thousands
+ord()	Returns the ASCII value of the first character of a string
+parse_str()	Parses a query string into variables
+print()	Outputs one or more strings
+printf()	Outputs a formatted string
+quoted_printable_decode()	Converts a quoted-printable string to an 8-bit string
+quoted_printable_encode()	Converts an 8-bit string to a quoted printable string
+quotemeta()	Quotes meta characters
+rtrim()	Removes whitespace or other characters from the right side of a string
+setlocale()	Sets locale information
+sha1()	Calculates the SHA-1 hash of a string
+sha1_file()	Calculates the SHA-1 hash of a file
+similar_text()	Calculates the similarity between two strings
+soundex()	Calculates the soundex key of a string
+sprintf()	Writes a formatted string to a variable
+sscanf()	Parses input from a string according to a format
+str_getcsv()	Parses a CSV string into an array
+str_ireplace()	Replaces some characters in a string (case-insensitive)
+str_pad()	Pads a string to a new length
+str_repeat()	Repeats a string a specified number of times
+str_replace()	Replaces some characters in a string (case-sensitive)
+str_rot13()	Performs the ROT13 encoding on a string
+str_shuffle()	Randomly shuffles all characters in a string
+str_split()	Splits a string into an array
+str_word_count()	Count the number of words in a string
+strcasecmp()	Compares two strings (case-insensitive)
+strchr()	Finds the first occurrence of a string inside another string (alias of strstr())
+strcmp()	Compares two strings (case-sensitive)
+strcoll()	Compares two strings (locale based string comparison)
+strcspn()	Returns the number of characters found in a string before any part of some specified characters are found
+strip_tags()	Strips HTML and PHP tags from a string
+stripcslashes()	Unquotes a string quoted with addcslashes()
+stripslashes()	Unquotes a string quoted with addslashes()
+stripos()	Returns the position of the first occurrence of a string inside another string (case-insensitive)
+stristr()	Finds the first occurrence of a string inside another string (case-insensitive)
+strlen()	Returns the length of a string
+strnatcasecmp()	Compares two strings using a "natural order" algorithm (case-insensitive)
+strnatcmp()	Compares two strings using a "natural order" algorithm (case-sensitive)
+strncasecmp()	String comparison of the first n characters (case-insensitive)
+strncmp()	String comparison of the first n characters (case-sensitive)
+strpbrk()	Searches a string for any of a set of characters
+strpos()	Returns the position of the first occurrence of a string inside another string (case-sensitive)
+strrchr()	Finds the last occurrence of a string inside another string
+strrev()	Reverses a string
+strripos()	Finds the position of the last occurrence of a string inside another string (case-insensitive)
+strrpos()	Finds the position of the last occurrence of a string inside another string (case-sensitive)
+strspn()	Returns the number of characters found in a string that contains only characters from a specified charlist
+strstr()	Finds the first occurrence of a string inside another string (case-sensitive)
+strtok()	Splits a string into smaller strings
+strtolower()	Converts a string to lowercase letters
+strtoupper()	Converts a string to uppercase letters
+strtr()	Translates certain characters in a string
+substr()	Returns a part of a string
+substr_compare()	Compares two strings from a specified start position (binary safe and optionally case-sensitive)
+substr_count()	Counts the number of times a substring occurs in a string
+substr_replace()	Replaces a part of a string with another string
+trim()	Removes whitespace or other characters from both sides of a string
+ucfirst()	Converts the first character of a string to uppercase
+ucwords()	Converts the first character of each word in a string to uppercase
+vfprintf()	Writes a formatted string to a specified output stream
+vprintf()	Outputs a formatted string
+vsprintf()	Writes a formatted string to a variable
+wordwrap()	Wraps a string to a given number of characters
+
+
+
+            PHP ARRAY functions
+
+Function	Description
+array()	Creates an array
+array_change_key_case()	Changes all keys in an array to lowercase or uppercase
+array_chunk()	Splits an array into chunks of arrays
+array_column()	Returns the values from a single column in the input array
+array_combine()	Creates an array by using the elements from one "keys" array and one "values" array
+array_count_values()	Counts all the values of an array
+array_diff()	Compare arrays, and returns the differences (compare values only)
+array_diff_assoc()	Compare arrays, and returns the differences (compare keys and values)
+array_diff_key()	Compare arrays, and returns the differences (compare keys only)
+array_diff_uassoc()	Compare arrays, and returns the differences (compare keys and values, using a user-defined key comparison function)
+array_diff_ukey()	Compare arrays, and returns the differences (compare keys only, using a user-defined key comparison function)
+array_fill()	Fills an array with values
+array_fill_keys()	Fills an array with values, specifying keys
+array_filter()	Filters the values of an array using a callback function
+array_flip()	Flips/Exchanges all keys with their associated values in an array
+array_intersect()	Compare arrays, and returns the matches (compare values only)
+array_intersect_assoc()	Compare arrays and returns the matches (compare keys and values)
+array_intersect_key()	Compare arrays, and returns the matches (compare keys only)
+array_intersect_uassoc()	Compare arrays, and returns the matches (compare keys and values, using a user-defined key comparison function)
+array_intersect_ukey()	Compare arrays, and returns the matches (compare keys only, using a user-defined key comparison function)
+array_key_exists()	Checks if the specified key exists in the array
+array_keys()	Returns all the keys of an array
+array_map()	Sends each value of an array to a user-made function, which returns new values
+array_merge()	Merges one or more arrays into one array
+array_merge_recursive()	Merges one or more arrays into one array recursively
+array_multisort()	Sorts multiple or multi-dimensional arrays
+array_pad()	Inserts a specified number of items, with a specified value, to an array
+array_pop()	Deletes the last element of an array
+array_product()	Calculates the product of the values in an array
+array_push()	Inserts one or more elements to the end of an array
+array_rand()	Returns one or more random keys from an array
+array_reduce()	Returns an array as a string, using a user-defined function
+array_replace()	Replaces the values of the first array with the values from following arrays
+array_replace_recursive()	Replaces the values of the first array with the values from following arrays recursively
+array_reverse()	Returns an array in the reverse order
+array_search()	Searches an array for a given value and returns the key
+array_shift()	Removes the first element from an array, and returns the value of the removed element
+array_slice()	Returns selected parts of an array
+array_splice()	Removes and replaces specified elements of an array
+array_sum()	Returns the sum of the values in an array
+array_udiff()	Compare arrays, and returns the differences (compare values only, using a user-defined key comparison function)
+array_udiff_assoc()	Compare arrays, and returns the differences (compare keys and values, using a built-in function to compare the keys and a user-defined function to compare the values)
+array_udiff_uassoc()	Compare arrays, and returns the differences (compare keys and values, using two user-defined key comparison functions)
+array_uintersect()	Compare arrays, and returns the matches (compare values only, using a user-defined key comparison function)
+array_uintersect_assoc()	Compare arrays, and returns the matches (compare keys and values, using a built-in function to compare the keys and a user-defined function to compare the values)
+array_uintersect_uassoc()	Compare arrays, and returns the matches (compare keys and values, using two user-defined key comparison functions)
+array_unique()	Removes duplicate values from an array
+array_unshift()	Adds one or more elements to the beginning of an array
+array_values()	Returns all the values of an array
+array_walk()	Applies a user function to every member of an array
+array_walk_recursive()	Applies a user function recursively to every member of an array
+arsort()	Sorts an associative array in descending order, according to the value
+asort()	Sorts an associative array in ascending order, according to the value
+compact()	Create array containing variables and their values
+count()	Returns the number of elements in an array
+current()	Returns the current element in an array
+each()	Deprecated from PHP 7.2. Returns the current key and value pair from an array
+end()	Sets the internal pointer of an array to its last element
+extract()	Imports variables into the current symbol table from an array
+in_array()	Checks if a specified value exists in an array
+key()	Fetches a key from an array
+krsort()	Sorts an associative array in descending order, according to the key
+ksort()	Sorts an associative array in ascending order, according to the key
+list()	Assigns variables as if they were an array
+natcasesort()	Sorts an array using a case insensitive "natural order" algorithm
+natsort()	Sorts an array using a "natural order" algorithm
+next()	Advance the internal array pointer of an array
+pos()	Alias of current()
+prev()	Rewinds the internal array pointer
+range()	Creates an array containing a range of elements
+reset()	Sets the internal pointer of an array to its first element
+rsort()	Sorts an indexed array in descending order
+shuffle()	Shuffles an array
+sizeof()	Alias of count()
+sort()	Sorts an indexed array in ascending order
+uasort()	Sorts an array by values using a user-defined comparison function and maintains the index association
+uksort()	Sorts an array by keys using a user-defined comparison function
+usort()	Sorts an array by values using a user-defined comparison function
